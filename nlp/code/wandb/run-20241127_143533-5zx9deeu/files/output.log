@@ -1,0 +1,100 @@
+---------- Make training arguments complete ----------
+---------- Make trainer ----------
+/opt/anaconda3/lib/python3.12/site-packages/accelerate/accelerator.py:449: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+/opt/anaconda3/lib/python3.12/site-packages/torch/amp/grad_scaler.py:132: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+You passed along `num_labels=3` with an incompatible id to label map: {'0': 'NEGATIVE', '1': 'POSITIVE'}. The number of labels wil be overwritten to 2.
+---------- device : cpu ----------
+2.5.1
+---------- Load tokenizer & model ----------
+---------- Model Name : digit82/kobart-summarization ----------
+BartConfig {
+  "_attn_implementation_autoset": true,
+  "_name_or_path": "digit82/kobart-summarization",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.1,
+  "classifier_dropout": 0.1,
+  "d_model": 768,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "do_blenderbot_90_layernorm": false,
+  "dropout": 0.1,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 1,
+  "extra_pos_embeddings": 2,
+  "force_bos_token_to_be_generated": false,
+  "forced_eos_token_id": 2,
+  "id2label": {
+    "0": "NEGATIVE",
+    "1": "POSITIVE"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "NEGATIVE": 0,
+    "POSITIVE": 1
+  },
+  "max_position_embeddings": 1026,
+  "model_type": "bart",
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_hidden_layers": 6,
+  "pad_token_id": 3,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "transformers_version": "4.46.3",
+  "use_cache": true,
+  "vocab_size": 30006
+}
+---------- Load tokenizer & model complete ----------
+---------- tokenizer special tokens :  {'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>', 'pad_token': '<pad>', 'mask_token': '<mask>', 'additional_special_tokens': ['#Person1#', '#Person2#', '#Person3#', '#PhoneNumber#', '#Address#', '#PassportNumber#']} ----------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+train_data:
+ #Person1#: 안녕하세요, 스미스씨. 저는 호킨스 의사입니다. 오늘 왜 오셨나요?
+#Person2#: 건강검진을 받는 것이 좋을 것 같아서요.
+#Person1#: 그렇군요, 당신은 5년 동안 건강검진을 받지 않았습니다. 매년 받아야 합니다.
+#Person2#: 알고 있습니다. 하지만 아무 문제가 없다면 왜 의사를 만나러 가야 하나요?
+#Person1#: 심각한 질병을 피하는 가장 좋은 방법은 이를 조기에 발견하는 것입니다. 그러니 당신의 건강을 위해 최소한 매년 한 번은 오세요.
+#Person2#: 알겠습니다.
+#Person1#: 여기 보세요. 당신의 눈과 귀는 괜찮아 보입니다. 깊게 숨을 들이쉬세요. 스미스씨, 담배 피우시나요?
+#Person2#: 네.
+#Person1#: 당신도 알다시피, 담배는 폐암과 심장병의 주요 원인입니다. 정말로 끊으셔야 합니다.
+#Person2#: 수백 번 시도했지만, 습관을 버리는 것이 어렵습니다.
+#Person1#: 우리는 도움이 될 수 있는 수업과 약물들을 제공하고 있습니다. 나가기 전에 더 많은 정보를 드리겠습니다.
+#Person2#: 알겠습니다, 감사합니다, 의사선생님.
+train_label:
+ 스미스씨가 건강검진을 받고 있고, 호킨스 의사는 매년 건강검진을 받는 것을 권장합니다. 호킨스 의사는 스미스씨가 담배를 끊는 데 도움이 될 수 있는 수업과 약물에 대한 정보를 제공할 것입니다.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+val_data:
+ #Person1#: 안녕하세요, 오늘 하루 어떠셨어요?
+#Person2#: 요즘 숨쉬기가 좀 힘들어요.
+#Person1#: 최근에 감기 같은 것에 걸리신 적이 있나요?
+#Person2#: 아니요, 감기는 아니에요. 그냥 숨을 쉴 때마다 가슴이 무겁게 느껴져요.
+#Person1#: 알고 있는 알레르기가 있나요?
+#Person2#: 아니요, 알고 있는 알레르기는 없어요.
+#Person1#: 이런 증상이 항상 나타나나요, 아니면 활동할 때 주로 나타나나요?
+#Person2#: 운동을 할 때 많이 나타나요.
+#Person1#: 저는 당신을 폐 전문의에게 보내서 천식에 대한 검사를 받게 할 거예요.
+#Person2#: 도와주셔서 감사합니다, 의사 선생님.
+val_label:
+ #Person2#는 숨쉬기에 어려움을 겪는다. 의사는 #Person1#에게 이에 대해 묻고, #Person2#를 폐 전문의에게 보낼 예정이다.
+---------- Load data complete ----------
+/opt/anaconda3/lib/python3.12/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+---------- Make dataset complete ----------
+---------- Make training arguments ----------

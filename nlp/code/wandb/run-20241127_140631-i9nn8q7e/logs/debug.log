@@ -1,0 +1,126 @@
+2024-11-27 14:06:31,358 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Configure stats pid to 33337
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/.config/wandb/settings
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/Documents/upstage/nlp/code/wandb/settings
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_init.py:_log_setup():524] Logging user logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_140631-i9nn8q7e/logs/debug.log
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_140631-i9nn8q7e/logs/debug-internal.log
+2024-11-27 14:06:31,359 INFO    MainThread:33337 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x171ad68a0>
+2024-11-27 14:06:31,360 INFO    MainThread:33337 [wandb_init.py:init():564] calling init triggers
+2024-11-27 14:06:31,360 INFO    MainThread:33337 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-11-27 14:06:31,360 INFO    MainThread:33337 [wandb_init.py:init():614] starting backend
+2024-11-27 14:06:31,360 INFO    MainThread:33337 [wandb_init.py:init():618] setting up manager
+2024-11-27 14:06:31,370 INFO    MainThread:33337 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-11-27 14:06:31,381 INFO    MainThread:33337 [wandb_init.py:init():624] backend started and connected
+2024-11-27 14:06:31,407 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-11-27 14:06:31,407 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-11-27 14:06:31,407 INFO    MainThread:33337 [wandb_init.py:init():716] updated telemetry
+2024-11-27 14:06:31,459 INFO    MainThread:33337 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-11-27 14:06:31,978 ERROR   MainThread:33337 [wandb_init.py:init():775] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-11-27 14:06:32,170 ERROR   MainThread:33337 [wandb_init.py:init():1188] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 781, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Configure stats pid to 33337
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/.config/wandb/settings
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/Documents/upstage/nlp/code/wandb/settings
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:_log_setup():524] Logging user logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_141902-ihypxn82/logs/debug.log
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_141902-ihypxn82/logs/debug-internal.log
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:init():564] calling init triggers
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:init():614] starting backend
+2024-11-27 14:19:02,104 INFO    MainThread:33337 [wandb_init.py:init():618] setting up manager
+2024-11-27 14:19:02,108 INFO    MainThread:33337 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-11-27 14:19:02,110 INFO    MainThread:33337 [wandb_init.py:init():624] backend started and connected
+2024-11-27 14:19:02,119 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-11-27 14:19:02,119 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-11-27 14:19:02,119 INFO    MainThread:33337 [wandb_init.py:init():716] updated telemetry
+2024-11-27 14:19:02,273 INFO    MainThread:33337 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-11-27 14:20:32,724 ERROR   MainThread:33337 [wandb_init.py:init():775] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-11-27 14:20:32,984 ERROR   MainThread:33337 [wandb_init.py:init():1188] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 781, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-11-27 14:23:52,529 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Configure stats pid to 33337
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/.config/wandb/settings
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/Documents/upstage/nlp/code/wandb/settings
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:_log_setup():524] Logging user logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_142352-ho0t7h2s/logs/debug.log
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_142352-ho0t7h2s/logs/debug-internal.log
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:init():564] calling init triggers
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:init():614] starting backend
+2024-11-27 14:23:52,530 INFO    MainThread:33337 [wandb_init.py:init():618] setting up manager
+2024-11-27 14:23:52,533 INFO    MainThread:33337 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-11-27 14:23:52,533 INFO    MainThread:33337 [wandb_init.py:init():624] backend started and connected
+2024-11-27 14:23:52,543 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-11-27 14:23:52,543 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-11-27 14:23:52,543 INFO    MainThread:33337 [wandb_init.py:init():716] updated telemetry
+2024-11-27 14:23:52,723 INFO    MainThread:33337 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-11-27 14:25:23,218 ERROR   MainThread:33337 [wandb_init.py:init():775] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-11-27 14:25:23,319 ERROR   MainThread:33337 [wandb_init.py:init():1188] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 781, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-11-27 14:29:20,137 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-11-27 14:29:20,138 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Configure stats pid to 33337
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/.config/wandb/settings
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from /Users/choesumin/Documents/upstage/nlp/code/wandb/settings
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-27 14:29:20,139 INFO    MainThread:33337 [wandb_init.py:_log_setup():524] Logging user logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_142920-a3d67n8f/logs/debug.log
+2024-11-27 14:29:20,140 INFO    MainThread:33337 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/choesumin/Documents/upstage/nlp/code/wandb/run-20241127_142920-a3d67n8f/logs/debug-internal.log
+2024-11-27 14:29:20,140 INFO    MainThread:33337 [wandb_init.py:init():564] calling init triggers
+2024-11-27 14:29:20,140 INFO    MainThread:33337 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-11-27 14:29:20,140 INFO    MainThread:33337 [wandb_init.py:init():614] starting backend
+2024-11-27 14:29:20,140 INFO    MainThread:33337 [wandb_init.py:init():618] setting up manager
+2024-11-27 14:29:20,150 INFO    MainThread:33337 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-11-27 14:29:20,150 INFO    MainThread:33337 [wandb_init.py:init():624] backend started and connected
+2024-11-27 14:29:20,175 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-11-27 14:29:20,175 INFO    MainThread:33337 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-11-27 14:29:20,175 INFO    MainThread:33337 [wandb_init.py:init():716] updated telemetry
+2024-11-27 14:29:20,420 INFO    MainThread:33337 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-11-27 14:30:50,996 ERROR   MainThread:33337 [wandb_init.py:init():775] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-11-27 14:30:51,070 ERROR   MainThread:33337 [wandb_init.py:init():1188] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 781, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-

@@ -1,19 +1,20 @@
 general:
   data_path: ../data/
   model_name: digit82/kobart-summarization
-  output_dir: ./
+  output_dir: ./ckp/digit82/kobart-summarization/
 inference:
   batch_size: 32
-  ckt_path: model ckt path
+  ckt_path: ckt path
   early_stopping: true
   generate_max_length: 100
-  no_repeat_ngram_size: 2
-  num_beams: 4
+  no_repeat_ngram_size: 15
+  num_beams: 6
   remove_tokens:
   - <usr>
   - <s>
   - </s>
   - <pad>
+  repetition_penalty: 1.5
   result_path: ./prediction/
 tokenizer:
   bos_token: <s>
@@ -27,6 +28,15 @@ tokenizer:
   - '#PhoneNumber#'
   - '#Address#'
   - '#PassportNumber#'
+  - '#Person4#'
+  - '#Email#'
+  - '#CardNumber#'
+  - '#DateOfBirth#'
+  - '#CarNumber#'
+  - '#Person6#'
+  - '#Person5#'
+  - '#SSN#'
+  - '#Person7#'
 training:
   do_eval: true
   do_train: true
@@ -56,4 +66,4 @@ training:
 wandb:
   entity: wandb_repo
   name: run_name
-  project: baseline
+  project: project_name

@@ -1,0 +1,48 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.12.7",
+    "heartbeatAt": "2024-11-27T05:35:34.431507",
+    "startedAt": "2024-11-27T05:35:33.532624",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/raeul0304/upstage.git",
+        "commit": "ebea64b5437fcf572210a2f70b948bda3a665645"
+    },
+    "email": "subong0304@gmail.com",
+    "root": "/Users/choesumin/Documents/upstage",
+    "host": "choesumin-ui-MacBookPro.local",
+    "username": "choesumin",
+    "executable": "/opt/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3204,
+        "min": 600,
+        "max": 3204
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3204,
+            "min": 600,
+            "max": 3204
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 12.418685913085938
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}
